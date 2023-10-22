@@ -42,14 +42,13 @@
 }
 
 .profile{
-  border:1px;
-  border-color:red;
+  border:1px solid black;
   margin-top: 2rem;
   margin-left: 0.5rem;
   width: 20rem;
   height:400px;
   font-size: 1.3rem;
-  background-color: bisque;
+  /*background-color: bisque;*/
   text-align:center;
 }
 
@@ -63,19 +62,24 @@
 }
 
 .project{
+  border:1px solid black;
   width: 45rem;
-  height:600px;
+  height:800px;
   margin-top: 2rem;
   margin-left: 1rem;
-  background-color: bisque;
+  /*background-color: bisque;*/
+  font-size: 18px;
+  padding-left:3px;
 }
 
 .banner{
+  border:1px solid black;
   width: 18rem;
   height:500px;
-  background-color: bisque;
+  /*background-color: bisque;*/
   margin-top: 2rem;
   margin-left: 1rem;
+
 }
 
 .projectBtn{
@@ -111,31 +115,80 @@
   margin-left:10px;
 }
 
+
 .banner-box-one{
+  border:1px solid black;
   width: 14rem;
-  background-color:gainsboro;
+  background-color:white;
   height:60px;
   margin-left:30px;
   margin-top:20px;
 }
 
 .banner-box-two{
+  border:1px solid black;
   width: 14rem;
-  background-color:gainsboro;
+  background-color:white;
   height:60px;
   margin-left:30px;
   margin-top:20px;
 }
 
 .banner-box-three{
+  border:1px solid black;
   width: 14rem;
-  background-color:gainsboro;
+  background-color:white;
   height:60px;
   margin-left:30px;
   margin-top:20px;
 }
 
-banner-box-one-awsbanner{
-  width:100%;
-  height:100%;
+.banner-box-four{
+  border:1px solid black;
+  width: 14rem;
+  background-color:white;
+  height:60px;
+  margin-left:30px;
+  margin-top:20px;
 }
+
+.banner-box-five{
+  border:1px solid black;
+  width: 14rem;
+  background-color:white;
+  height:60px;
+  margin-left:30px;
+  margin-top:20px;
+}
+
+.banner-box-one-awsbanner{
+  width:60%;
+  height:100%;
+  margin-left:40px;
+}
+
+.banner-box-two-fptbanner{
+  width:60%;
+  height:100%;
+  margin-left:40px;
+}
+
+.banner-box-three-bitbanner{
+  width:60%;
+  height:100%;
+  margin-left:40px;
+}
+
+.banner-box-four-mcsabanner{
+  width:60%;
+  height:100%;
+  margin-left:40px;
+}
+
+.banner-box-five-cukbanner{
+  width:60%;
+  height:100%;
+  margin-left:40px;
+}
+
+

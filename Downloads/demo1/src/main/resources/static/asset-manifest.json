@@ -1,15 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.e6c13ad2.css",
-    "main.js": "/static/js/main.1ec797b1.js",
+    "main.css": "/static/css/main.abbe05c8.css",
+    "main.js": "/static/js/main.b87971e7.js",
     "static/js/787.cda612ba.chunk.js": "/static/js/787.cda612ba.chunk.js",
+    "static/media/Hyunoh Kwon.jpg": "/static/media/Hyunoh Kwon.6a894e48016b60e290d3.jpg",
+    "static/media/awslogo_.png": "/static/media/awslogo_.9cb754bd6d98b574dd81.png",
     "index.html": "/index.html",
-    "main.e6c13ad2.css.map": "/static/css/main.e6c13ad2.css.map",
-    "main.1ec797b1.js.map": "/static/js/main.1ec797b1.js.map",
+    "main.abbe05c8.css.map": "/static/css/main.abbe05c8.css.map",
+    "main.b87971e7.js.map": "/static/js/main.b87971e7.js.map",
     "787.cda612ba.chunk.js.map": "/static/js/787.cda612ba.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e6c13ad2.css",
-    "static/js/main.1ec797b1.js"
+    "static/css/main.abbe05c8.css",
+    "static/js/main.b87971e7.js"
   ]
 }

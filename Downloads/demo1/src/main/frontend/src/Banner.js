@@ -8,7 +8,7 @@ import awsbanner from './assets/awslogo_.png'
 
     return(
         <div className="banner">
-            배너
+            <b>Sitemap</b>
             <div className="banner-box">
                 <a href="https://aws.amazon.com/ko/">
                     <div className="banner-box-one">

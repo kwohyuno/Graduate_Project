@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Cute+Font&family=Gamja+Flower&family=Nanum+Pen+Script&family=Noto+Sans+KR:wght@100;300;400;500;700&family=Poor+Story&family=Stylish&display=swap');
+
+
 .App {
   text-align: center;
 }
@@ -87,6 +90,19 @@
   margin-left:14rem;
   width: 280px;
   height: 40px;
+  border-radius:10px;
+  border:1px solid;
+  cursor:pointer;
+  font-size:22px;
+  background-color: white;
+  color:blue;
+  font-family: 'Poor Story';
+
+}
+
+.projectBtn:hover{
+  color:white;
+  background-color:#2980b9;
 }
 
 .bulletinBtn{
@@ -94,6 +110,18 @@
   margin-left:1.5rem;
   width:300px;
   height:40px;
+  border-radius:10px;
+  border:1px solid;
+  cursor:pointer;
+  font-size:22px;
+  background-color: white;
+  color:blue;
+  font-family: 'Poor Story';
+}
+
+.bulletinBtn:hover{
+  color:white;
+  background-color:#2980b9;
 }
 
 .profile-contents-fb{

@@ -12,15 +12,10 @@ function BulletinBoard() {
     // const [projectToggle, setProjectToggle] = useState();
     // const [bulletinToggle, setBulletinToggle] = useState();
     const navi = useNavigate();
+    const refreshPage = () => {
+        window.location.reload();
+    }
 
-    const projectClick = () => {
-        alert('프로젝트 버튼이 클릭되었습니다');
-        // setProjectToggle();
-    }
-    const bulletinClick = () => {
-        alert('게시판 버튼이 클릭되었습니다');
-        // setBulletinToggle();
-    }
 
     useEffect(() => {
         axios.get('/api/hello')
@@ -33,7 +28,7 @@ function BulletinBoard() {
             <div style={{fontSize:20,fontWeight:'bold',marginTop:'20px',marginLeft:'20px'}}>
                 Hyunoh's IT Blog
                 <button className="projectBtn" onClick={()=>{navi('/');}}>프로젝트</button>
-                <button className="bulletinBtn" onClick={bulletinClick}>방명록</button>
+                <button className="bulletinBtn" onClick={refreshPage}>방명록</button>
             </div>
             <div className="box">
                 <Profile/>

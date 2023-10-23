@@ -6,7 +6,7 @@ function Project(props){
         <div className="project">
             <div className="project-one">
                 <p>
-                    <h2>프로젝트 1. Devster v2</h2>
+                    <h2>프로젝트 1. Devster v2 <a href="https://github.com/kwohyuno/devster_final.git">(Link)</a></h2>
                     &nbsp;Online community for preliminary software engineer
                     <ul>
                         <li>Migrated Front-End components from JSP to React.js in order to upgrade user experience and code agility<br/></li>
@@ -17,7 +17,7 @@ function Project(props){
             </div>
             <div className="project-two">
                 <p>
-                    <h2>프로젝트 2. Devster v1</h2>
+                    <h2>프로젝트 2. Devster v1 <a href="https://github.com/kddongkyu/bit701-four-semi.git">(Link)</a> </h2>
                     &nbsp;Online community for preliminary software engineer
                     <ul>
                         <li>Designed DB(MySQL) and bulletin board with MyBatis, Spring Boot, JSP, jQuery, and Ajax</li>
@@ -29,7 +29,7 @@ function Project(props){
             </div>
             <div className="project-three">
                 <p>
-                    <h2>프로젝트3. Just Say</h2>
+                    <h2>프로젝트3. Just Say <a href="https://github.com/kwohyuno/Primer-Hackthon.git">(Link)</a> </h2>
                     &nbsp;English Practice Web Application
                     <ul>
                         <li>Developed web services where people can practice foreign languages, by using GPT 3.5 and Google TTS, as well as Fast API, Git Action, React.js, and AWS</li>

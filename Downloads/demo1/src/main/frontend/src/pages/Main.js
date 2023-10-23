@@ -6,21 +6,17 @@ import "../App.css";
 import {Profile,Project,Bulletin,Banner} from "../index";
 
 
+
 function Main() {
     const [hello, setHello] = useState('')
     const [currentPage,setCurrentPage] = useState();
     const navi = useNavigate();
     // const [projectToggle, setProjectToggle] = useState();
     // const [bulletinToggle, setBulletinToggle] = useState();
+    const refreshPage = () => {
+        window.location.reload();
+    }
 
-    const projectClick = () => {
-        alert('프로젝트 버튼이 클릭되었습니다');
-        // setProjectToggle();
-    }
-    const bulletinClick = () => {
-        alert('게시판 버튼이 클릭되었습니다');
-        // setBulletinToggle();
-    }
 
     useEffect(() => {
         axios.get('/api/hello')
@@ -32,7 +28,7 @@ function Main() {
         <div>
             <div style={{fontSize:20,fontWeight:'bold',marginTop:'20px',marginLeft:'20px'}}>
                 Hyunoh's IT Blog
-                <button className="projectBtn" onClick={projectClick}>프로젝트</button>
+                <button className="projectBtn" onClick={refreshPage}>프로젝트</button>
                 <button className="bulletinBtn" onClick={()=>{navi('/bulletinboard');}}>방명록</button>
             </div>
             <div className="box">

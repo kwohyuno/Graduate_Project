@@ -26,5 +26,6 @@ export {default as Bulletin} from './Bulletin';
 export {default as Banner} from './Banner';
 export {default as Main} from './pages/Main';
 export {default as BulletinBoard} from './pages/BulletinBoard';
+export {default as BulletinForm} from './pages/BulletinForm';
 
 

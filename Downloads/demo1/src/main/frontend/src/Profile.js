@@ -17,6 +17,7 @@ function Profile(props){
                 <p>Hyun Oh Kwon</p>
                 <p>고려사이버대학교 졸업</p>
                 <p>AWS Sales Team (2021- 2022)</p>
+                <p>FPT Software Engineer (2023- 2024)</p>
                 <div className ="profile-sns">
                     <a href="https://www.facebook.com/profile.php?id=100011265999655">
                         <img src={fb} className="profile-contents-fb" />

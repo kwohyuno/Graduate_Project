@@ -75,6 +75,17 @@
   padding-left:3px;
 }
 
+.bulletin{
+  border:1px solid black;
+  width: 45rem;
+  height:800px;
+  margin-top: 2rem;
+  margin-left: 1rem;
+  /*background-color: bisque;*/
+  font-size: 18px;
+  padding-left:3px;
+}
+
 .banner{
   border:1px solid black;
   width: 18rem;
@@ -219,4 +230,104 @@
   margin-left:40px;
 }
 
+.bulletin-write{
+  width: 80px;
+  height: 40px;
+  border-radius:10px;
+  border:1px solid;
+  cursor:pointer;
+  font-size:22px;
+  background-color: white;
+  color:blue;
+  font-family: 'Poor Story';
+}
+.bulletin-write:hover{
+  color:white;
+  background-color:#2980b9;
+}
+
+.box-form-bulletinform{
+  border:1px solid black;
+  width: 45rem;
+  height:800px;
+  margin-top: 2rem;
+  margin-left: 1rem;
+  /*background-color: bisque;*/
+  font-size: 18px;
+  padding-left:20px;
+
+}
+
+.box-form-bulletinform-name{
+  margin-top:30px;
+}
+
+.box-form-bulletinform-name-rec{
+  border: 1px solid;
+  height:20px;
+}
+
+.box-form-bulletinform-password{
+  margin-top:30px;
+}
+
+.box-form-bulletinform-password-rec{
+  border: 1px solid;
+  height:20px;
+}
+
+
+.box-form-bulletinform-content{
+  margin-top:30px;
+}
+.box-form-bulletinform-content-rec{
+  width:500px;
+  height:300px;
+  margin-top:30px;
+  border: 1px solid;
+}
+
+.box-form-bullentinform-header{
+  font-family: 'Poor Story';
+  padding-top:20px;
+  padding-left:20px;
+  font-size: 25px;
+}
+
+.box-form-bulletinform-cancel{
+  width: 80px;
+  height: 40px;
+  border-radius:10px;
+  border:1px solid;
+  cursor:pointer;
+  font-size:22px;
+  background-color: white;
+  color:blue;
+  font-family: 'Poor Story';
+  margin-left:200px;
+  margin-top:40px;
+}
+
+.box-form-bulletinform-cancel:hover{
+  color:white;
+  background-color:#2980b9;
+}
+
+.box-form-bulletinform-btn{
+  width: 80px;
+  height: 40px;
+  border-radius:10px;
+  border:1px solid;
+  cursor:pointer;
+  font-size:22px;
+  background-color: white;
+  color:blue;
+  font-family: 'Poor Story';
+  margin-left:80px;
+}
+
+.box-form-bulletinform-btn:hover{
+  color:white;
+  background-color:#2980b9;
+}
 

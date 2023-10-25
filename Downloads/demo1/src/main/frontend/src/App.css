@@ -331,3 +331,15 @@
   background-color:#2980b9;
 }
 
+.bulletin-list-eachpost{
+  border: 1px black solid;
+  width: 500px;
+  height:180px;
+  margin-top:20px;
+  margin-left:50px;
+}
+
+.bulletin-list-eachpost-update{
+  margin-left:10px;
+}
+

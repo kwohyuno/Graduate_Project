@@ -1,4 +1,3 @@
-// src/main/frontend/src/App.js
 import React, {useEffect, useState} from 'react';
 import {Route, Link, NavLink, useNavigate} from 'react-router-dom';
 import axios from 'axios';
@@ -7,26 +6,45 @@ import {Profile,Project,Bulletin,Banner} from "../index";
 
 
 function BulletinForm() {
-    const [hello, setHello] = useState('')
-    const [currentPage,setCurrentPage] = useState();
-    // const [projectToggle, setProjectToggle] = useState();
-    // const [bulletinToggle, setBulletinToggle] = useState();
     const navi = useNavigate();
-    const refreshPage = () => {
-        window.location.reload();
-    }
-
+    const [hello,setHello]=useState("");
     const [name,setName]=useState("");
     const [password,setPassword]=useState("");
     const [content, setContent]=useState("");
 
+    // useEffect(() => {
+    //     axios.get('/api/hello')
+    //         .then(response => console.log(response))
+    //         .catch(error => console.log(error))
+    // }, []);
 
+    // const route = ()=> {navi('/bulletinboard')}
+    const onSubmitEvent = (e) =>{
+        e.preventDefault();
+        const dto = {
+            'name' : name,
+            'password' : password,
+            'content' : content
+        }
+        console.log(name);
+        console.log(password);
+        console.log(content);
+        console.log(dto);
 
-    useEffect(() => {
-        axios.get('/api/hello')
-            .then(response => setHello(response.data))
-            .catch(error => console.log(error))
-    }, []);
+        axios
+            .post("/api/insertbulletin",dto)
+            .then((res)=>{
+             navi("/bulletinboard");
+            })
+            .catch((error)=>{
+            console.log(error);
+        });
+    };
+
+    // useEffect(() => {
+    //     axios.get('/api/insertbulletin')
+    //         .catch(error => console.log(error))
+    // }, []);
 
     return (
         <div>
@@ -37,7 +55,7 @@ function BulletinForm() {
             </div>
             <div className="box">
                 <Profile/>
-                <form className="box-form">
+                <form className="box-form" onSubmit={onSubmitEvent}>
                     <div className="box-form-bulletinform">
                         <div className="box-form-bullentinform-header">방명록 작성</div>
                         <div className="box-form-bulletinform-name">
@@ -70,7 +88,7 @@ function BulletinForm() {
                                 value={content}
                             />
                         </div>
-                        <button className="box-form-bulletinform-cancel">취소</button>
+                        <button className="box-form-bulletinform-cancel"onClick={()=>{navi('/bulletinboard');}}>취소</button>
                         <button type="submit" className="box-form-bulletinform-btn">업로드</button>
                     </div>
 

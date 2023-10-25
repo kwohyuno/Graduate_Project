@@ -17,11 +17,11 @@ function App() {
     }
 
 
-    useEffect(() => {
-        axios.get('/api/hello')
-            .then(response => setHello(response.data))
-            .catch(error => console.log(error))
-    }, []);
+    // useEffect(() => {
+    //     axios.get('/api/hello')
+    //         .then(response => setHello(response.data))
+    //         .catch(error => console.log(error))
+    // }, []);
 
     return (
         <div>

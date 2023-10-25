@@ -7,21 +7,18 @@ import {Profile,Project,Bulletin,Banner} from "../index";
 
 
 function BulletinBoard() {
-    const [hello, setHello] = useState('')
-    const [currentPage,setCurrentPage] = useState();
-    // const [projectToggle, setProjectToggle] = useState();
-    // const [bulletinToggle, setBulletinToggle] = useState();
+
     const navi = useNavigate();
     const refreshPage = () => {
         window.location.reload();
     }
 
 
-    useEffect(() => {
-        axios.get('/api/hello')
-            .then(response => setHello(response.data))
-            .catch(error => console.log(error))
-    }, []);
+    // useEffect(() => {
+    //     axios.get('/api/hello')
+    //         .then(response => setHello(response.data))
+    //         .catch(error => console.log(error))
+    // }, []);
 
     return (
         <div>

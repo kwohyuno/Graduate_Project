@@ -78,7 +78,7 @@
 .bulletin{
   border:1px solid black;
   width: 45rem;
-  height:800px;
+  height: auto;
   margin-top: 2rem;
   margin-left: 1rem;
   /*background-color: bisque;*/
@@ -366,6 +366,10 @@
   margin-left:10px;
 }
 
+.bulletin-list-eachpost-delete{
+  margin-left:10px;
+}
+
 .box-galleryboard{
   border:1px solid black;
   width: 45rem;
@@ -382,5 +386,10 @@
   margin-top:15px;
   width: 225px;
   height: 225px;
+}
+
+.bulletin-write{
+  margin-left:5px;
+  margin-top:5px;
 }
 

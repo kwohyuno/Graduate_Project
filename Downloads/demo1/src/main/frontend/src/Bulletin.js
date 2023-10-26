@@ -41,7 +41,7 @@ function Bulletin(props){
         <div>
 
             <div className="bulletin">
-                게시판
+
                 <div><button className="bulletin-write" onClick={()=>{navi('/bulletinform');}}>글쓰기</button></div>
 
                 <div className="bulletin-list">

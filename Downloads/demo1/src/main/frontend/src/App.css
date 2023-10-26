@@ -86,6 +86,8 @@
   padding-left:3px;
 }
 
+
+
 .banner{
   border:1px solid black;
   width: 18rem;
@@ -131,6 +133,25 @@
 }
 
 .bulletinBtn:hover{
+  color:white;
+  background-color:#2980b9;
+}
+
+.galleryBtn{
+  margin-top: 1rem;
+  margin-left:1.5rem;
+  width:300px;
+  height:40px;
+  border-radius:10px;
+  border:1px solid;
+  cursor:pointer;
+  font-size:22px;
+  background-color: white;
+  color:blue;
+  font-family: 'Poor Story';
+}
+
+.galleryBtn:hover{
   color:white;
   background-color:#2980b9;
 }
@@ -258,6 +279,8 @@
 
 }
 
+
+
 .box-form-bulletinform-name{
   margin-top:30px;
 }
@@ -341,5 +364,23 @@
 
 .bulletin-list-eachpost-update{
   margin-left:10px;
+}
+
+.box-galleryboard{
+  border:1px solid black;
+  width: 45rem;
+  height:800px;
+  margin-top: 2rem;
+  margin-left: 1rem;
+  /*background-color: bisque;*/
+  font-size: 18px;
+  padding-left:20px;
+}
+
+.box-galleryboard-photo{
+  margin-left:5px;
+  margin-top:15px;
+  width: 225px;
+  height: 225px;
 }
 

@@ -26,6 +26,7 @@ function BulletinBoard() {
                 Hyunoh's IT Blog
                 <button className="projectBtn" onClick={()=>{navi('/');}}>프로젝트</button>
                 <button className="bulletinBtn" onClick={refreshPage}>방명록</button>
+                <button className="galleryBtn" onClick={()=>{navi('/gallery');}}>사진첩</button>
             </div>
             <div className="box">
                 <Profile/>

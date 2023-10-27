@@ -36,7 +36,7 @@ function Gallery() {
 
     return (
         <div>
-            <div style={{fontSize:20,fontWeight:'bold',marginTop:'20px',marginLeft:'20px'}}>
+            <div style={{fontSize:20,fontWeight:'bold',marginTop:'20px',marginLeft:'20px'}} >
                 Hyunoh's IT Blog
                 <button className="projectBtn" onClick={()=>{navi('/')}}>프로젝트</button>
                 <button className="bulletinBtn" onClick={()=>{navi('/bulletinboard');}}>방명록</button>

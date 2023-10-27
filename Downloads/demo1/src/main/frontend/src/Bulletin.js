@@ -1,6 +1,6 @@
 import {Route, Link, NavLink, useNavigate} from 'react-router-dom';
 import axios from "axios";
-import {useEffect, useState} from "react";
+import {useEffect, useState, useCallback} from "react";
 import * as React from 'react';
 import Button from '@mui/joy/Button';
 import FormControl from '@mui/joy/FormControl';
@@ -46,6 +46,11 @@ function Bulletin(props){
             alert('비밀번호가 틀렸습니다')
         }
     }
+
+    const editBulletinPost = useCallback((board)=>{
+        const updateFormUrl=`/bulletinupdate`;
+        navi(updateFormUrl,{state:board})
+    },[]);
 
     useEffect(()=> {
         axios
@@ -119,7 +124,7 @@ function Bulletin(props){
                                 {/*>*/}
                                 {/*    수정*/}
                                 {/*</Button>*/}
-                                <button className="bulletin-list-eachpost-update">수정</button>
+                                <button className="bulletin-list-eachpost-update" onClick={()=>editBulletinPost(board)}>수정</button>
                             </div>
                         );
                     })}

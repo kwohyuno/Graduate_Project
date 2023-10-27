@@ -1,16 +1,28 @@
-import React, {useEffect, useState, useCallBack} from 'react';
-import {Route, Link, NavLink, useNavigate} from 'react-router-dom';
+import React, {useEffect, useState} from 'react';
+import {Route, Link, NavLink, useNavigate, useLocation} from 'react-router-dom';
 import axios from 'axios';
 import "../App.css";
 import {Profile,Project,Bulletin,Banner} from "../index";
 
 
-function BulletinForm() {
+function BulletinUpdate() {
     const navi = useNavigate();
     const [hello,setHello]=useState("");
     const [name,setName]=useState("");
     const [password,setPassword]=useState("");
     const [content, setContent]=useState("");
+    const [idx,setIdx]=useState("");
+
+    const location = useLocation();
+    const board=location.state;
+
+    useEffect(()=>{
+        if(board){
+            setName(board.name);
+            setContent(board.content);
+        }
+    },[board]);
+
 
     // useEffect(() => {
     //     axios.get('/api/hello')
@@ -24,7 +36,8 @@ function BulletinForm() {
         const dto = {
             'name' : name,
             'password' : password,
-            'content' : content
+            'content' : content,
+            'idx' : board.idx,
         }
         console.log(name);
         console.log(password);
@@ -32,13 +45,13 @@ function BulletinForm() {
         console.log(dto);
 
         axios
-            .post("/api/insertbulletin",dto)
+            .put(`/api/updatebulletin`,dto)
             .then((res)=>{
-             navi("/bulletinboard");
+                navi("/bulletinboard");
             })
             .catch((error)=>{
-            console.log(error);
-        });
+                console.log(error);
+            });
     };
 
     // useEffect(() => {
@@ -62,11 +75,12 @@ function BulletinForm() {
                         <div className="box-form-bulletinform-name">
                             Name : &nbsp;&nbsp;
                             <input
-                            type="text"
-                            className="box-form-bulletinform-name-rec"
-                            required
-                            onChange={(e) => setName(e.target.value)}
-                            value={name}
+                                type="text"
+                                className="box-form-bulletinform-name-rec"
+                                required
+                                onChange={(e) => setName(e.target.value)}
+                                placeholder={board.name}
+                                value={name}
                             />
                         </div>
                         <div className="box-form-bulletinform-password">
@@ -104,4 +118,4 @@ function BulletinForm() {
     );
 }
 
-export default BulletinForm;
+export default BulletinUpdate;

@@ -6,6 +6,7 @@ import Project from "../Project";
 import Main from "../pages/Main";
 import BulletinForm from "../pages/BulletinForm";
 import Gallery from "../pages/Gallery";
+import BulletinUpdate from "../pages/BulletinUpdate";
 
 function RouteMain(props){
 
@@ -18,6 +19,7 @@ function RouteMain(props){
             <Route path="/bulletinboard" element={<BulletinBoard />} />
             <Route path="/bulletinform" element={<BulletinForm />} />
             <Route path="/gallery" element={<Gallery />} />
+            <Route path="/bulletinupdate" element={<BulletinUpdate />} />
         </Routes>
     );
 }
